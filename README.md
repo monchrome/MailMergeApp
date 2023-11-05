@@ -3,8 +3,8 @@
 WORK IN PROGRESS
 
 This is a spring boot based application , that I am building for a charity organization. Their specific need is to be handle mailmerge and social media posts in a more easy manner. They currently have many technically challenged people working for them and hence need a more intuitive way of getting their daily tasks done without much end user training. 
-Their main pain point today wrt mailmerge is that they come to know erroneous entries ( names or gmail addresses after the entire mail merge task is completed via gmail. And some one has to look into "inbox" folder , to see which recipients did not get the email and then accordingl make changes to mailmerge record source. This is time consuming for them as they email tens of thousands of patrons/donors very frequently. Thye would prefer errors in record source being identified upfront, before an email send operation is attempted. 
-Hence a spring boot api's are being worked upon as backend for a small ui app. The spring boot api's will serve as the backend for the ui app. 
+Their main pain point today wrt mailmerge is that they come to know erroneous entries ( names or gmail addresses) after the entire mail merge task is completed via gmail. And some one has to look into "inbox" folder , to see which recipients did not get the email and then accordingly make changes to mailmerge record source file. This is time consuming for them because they have to email tens of thousands of patrons/donors very frequently. They would prefer errors in record source, being identified upfront, before an email send operation is attempted. 
+Hence these spring boot app is being worked upon as backend to be used via custom frontend to provide api's that would capture recipient data and store in memory and report errors upfront before email send operation is attempted via frontend (being worked upon separately).
 
 Mail Merge API requirements  : 
   - MailMerge API should allow to add few records of recipients on demand or allow to upload in bulk via a csv file.
