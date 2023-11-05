@@ -15,7 +15,7 @@ List of API's :
   - Input - Takes JSON array of recipients 
       -     [
         {
-            "firstName": "Sam123",
+            "firstName": "Sam",
             "lastName": "Dsouza",
             "emailAddress": "samd@gmail.com"
         },
