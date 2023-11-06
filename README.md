@@ -43,21 +43,26 @@ LIST OF API's :
    
 
 USAGE EXAMPLES :
+1. CREATE API REQUEST
 
- ![Example of error handling with create api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20successful%20create%20api%20usage.png?raw=true)
+ ![Example of successful create api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20successful%20create%20api%20usage.png?raw=true)
 
  
- ![Example of error handling with update api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20successful%20update%20api%20usage.png?raw=true)
+ 2. UPDATE API REQUEST
+ ![Example of successful update api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20successful%20update%20api%20usage.png?raw=true)
 
 
+ 3. CREATE API ERROR HANDLING EXAMPLE
  ![Example of error handling with create api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20error%20handling%20with%20create%20api.png?raw=true)
 
 
+ 4. UPLOAD API ERROR HANDLING EXAMPLE
 ![Example of error handling with update api](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20successful%20update%20api%20usage.png?raw=true)
 
 
+5. CREATE API ERROR RESPONSE WITH EXCEPTION STACK WHEN error.settings.include-stack-trace IS ENABLED
 ![Example of exception shown in create api response when show exception stack is enabled](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20exception%20shown%20in%20create%20api%20response%20when%20show%20exception%20stack%20is%20enabled.png?raw=true)
 
-
+6. UPLOAD API ERROR RESPONSE WITH EXCEPTION STACK WHEN error.settings.include-stack-trace
 ![Example of exception shown in upload api response when show exception stack is enabled](https://github.com/monchrome/mailMergeApp/blob/main/images/Example%20of%20exception%20shown%20in%20upload%20api%20response%20when%20show%20exception%20stack%20is%20enabled%20.png?raw=true)
 
