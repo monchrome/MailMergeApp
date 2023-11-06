@@ -139,10 +139,17 @@ public class RecipientServiceImpl implements RecipientService {
     }
 
     private boolean hasErrorRecords(ErrorRecords errorRecords) {
-        return ( errorRecords.getFirstNames().size() > 0 ||
-                errorRecords.getMiddleNames().size() > 0 ||
-                errorRecords.getLastNames().size() > 0 ||
-                errorRecords.getEmailAddresses().size() > 0 );
+        if (isNotNullAndHasItems(errorRecords.getFirstNames()) ||
+            isNotNullAndHasItems(errorRecords.getMiddleNames()) ||
+            isNotNullAndHasItems(errorRecords.getLastNames()) ||
+            isNotNullAndHasItems(errorRecords.getEmailAddresses())) {
+            return true;
+        }
+        return false;
+    }
+
+    private boolean isNotNullAndHasItems(List<String> errorsList) {
+        return errorsList != null && errorsList.size() > 0;
     }
 
     private void raiseInvalidDataException(ErrorRecords errorRecords) {
