@@ -2,7 +2,7 @@
 
 WORK IN PROGRESS
 
-This is a spring boot based application, that I am building for a charity organization.  They currently have many employees who aren't very tech savvy and also do not have resources for employee traiing. They need a more intuitive way of getting their daily tasks done without much end user training.
+This is a spring boot based application, that I am building for a charity organization that I volunteer for.  They currently have many employees who aren't very tech savvy and also do not have resources for employee traiing. They need a more intuitive way of getting their daily tasks done without much end user training. It is very costly for them to hire paid employees, so volunteers like me try to help in any fashion we can by donating either time, money, resources in the form of code like this project.
 
 Their main pain point today is performing mail merges to send emails across vast set of donors/patron emails. Crafting an email draft is easy for them, doing mail merge is not. Their pain point is that they come to know of  erroneous entries (names or gmail addresses) after the entire mail merge task is completed via gmail. And some one has to look into "inbox" folder , to see which recipients did not get the email and then accordingly make changes to mailmerge record source file. This is time consuming for them because they have to email tens of thousands of patrons/donors very frequently. They would prefer errors in record source ( e.g. spreadsheets in csv format), being identified upfront, before an email send operation is attempted. 
 
