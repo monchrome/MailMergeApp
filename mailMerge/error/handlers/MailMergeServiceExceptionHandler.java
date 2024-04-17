@@ -25,8 +25,12 @@ import java.util.Set;
 @ControllerAdvice
 public class MailMergeServiceExceptionHandler extends ResponseEntityExceptionHandler {
 
+    private ErrorSettings errorSettings;
+
     @Autowired
-    ErrorSettings errorSettings;
+    public MailMergeServiceExceptionHandler(ErrorSettings errorSettings) {
+        this.errorSettings = errorSettings;
+    }
 
     @ExceptionHandler(Exception.class)
     public final ResponseEntity<Object>
