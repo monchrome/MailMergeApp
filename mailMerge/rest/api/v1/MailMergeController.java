@@ -20,8 +20,14 @@ import java.util.List;
  */
 @RestController
 public class MailMergeController {
+    
+    private final RecipientService recipientService;
+
     @Autowired
-    RecipientService recipientService;
+    public MailMergeController(RecipientService recipientService) {
+        this.recipientService = recipientService;
+    }
+ 
     @PostMapping("/v1/mailMerge/recipients/create")
     public ResponseEntity<String> addRecipients(@RequestBody
                                      @NotEmpty(message= "Recipients list cannot be empty.")
